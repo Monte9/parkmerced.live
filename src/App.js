@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import YouTube from 'react-youtube'
 
+import Weather from './weather/Weather.js'
 import './App.css';
+
 
 var getDimensions = () => ({
   width: window.innerWidth,
@@ -40,6 +42,11 @@ class App extends Component {
 
     return (
       <div className="app-container" style={{ width: width, height: height }}>
+        <div className="first-name" style={{paddingLeft: 0.01 * this.state.width, paddingRight: 0.01 * this.state.width}}>
+          <div className="app">
+            <Weather />
+          </div>
+        </div>
         <YouTube
           videoId="5yqbjUG_gLQ"
           opts={opts}
@@ -50,3 +57,9 @@ class App extends Component {
 }
 
 export default App;
+
+
+// <YouTube
+//           videoId="5yqbjUG_gLQ"
+//           opts={opts}
+//         />

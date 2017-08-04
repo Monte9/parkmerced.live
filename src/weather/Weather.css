@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Arsenal');
+@import url("./icons.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family: 'Arsenal', sans-serif;
+}
+
+.weather-today {
+    position: relative;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.icon-description {
+    font-size: 1em;
+}
+
+.border {
+    margin: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+}
+
+.icon-big {
+    margin-top: 4em;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container {
+    margin-left: 20px;
+}
+
+.left-time {
+    display: flex;
+    flex: 1;
+    font-size: 2em;
+}
+
+.left-day {
+    display: flex;
+    flex: 1;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container {
+    margin-left: 50px;
+}
+
+.small-temp,
+.big-temp {
+    display: flex;
+    flex: 0.5;
+    font-size: 4em;
+}
+
+.big-temp:after,
+.small-temp:after {
+    content: "°";
+    opacity: 0.2;
+    font-family: monospace;
+    position: relative;
+    color: white;
+    top: -5px;
+    left: 0px;
+}
+
+.icon-wrapper {
+    position: relative;
+}
+
+.day {
+    clear: both;
+    padding: 2em 0;
+}
+
+.day-description {
+    text-align: left;
+    float: left;
+    width: 75%;
+    font-size: 1.2em;
+}
+
+.loading-label {
+    font-size: 1.8em;
+}
+
+.day .icon-wrapper {
+    width: 25%;
+    float: right;
+    top: -10px;
+    text-align: right;
+    right: -60px;
+    font-weight: bold;
+}
+
+.day .icon-wrapper .small-temp:after {
+    right: -15px;
+}
+
+.day .icon-wrapper .small-temp {
+    font-size: 2em;
+    margin-right: 1.7em;
+}
+
+.day .icon-wrapper .icon-small {
+    zoom: 0.3;
+}
