@@ -1,4 +1,14 @@
-.app {
+.news-app {
+  top: 0%;
+  left: 0%;
+  color: #fff;
+  transform: translate(5%, 5%);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.19);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  border-radius: 20px;
+}
+
+.weather-app {
     width: 350px;
     max-width: 100%;
     background: #2B3A42;
