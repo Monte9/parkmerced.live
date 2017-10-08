@@ -12,7 +12,7 @@ var getDimensions = () => ({
   height: window.innerHeight
 });
 
-class App extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = getDimensions();
@@ -63,18 +63,10 @@ class App extends Component {
           </div>
         </div>
         <YouTube
-          videoId="xjiXY4S7R5M"
+          videoId="uMGBq-xkQz8"
           opts={opts}
         />
       </div>
     );
   }
 }
-
-export default App;
-
-
-// <YouTube
-//           videoId="5yqbjUG_gLQ"
-//           opts={opts}
-//         />
